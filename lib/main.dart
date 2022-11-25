@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_paraguay_sa/tela.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/search_item_details.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/search_page.dart';
 
 void main() {
   runApp(const MyApp());

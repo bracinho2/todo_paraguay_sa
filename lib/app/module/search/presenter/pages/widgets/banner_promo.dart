@@ -29,14 +29,23 @@ class _BannerPageState extends State<BannerPage> {
           },
           child: Padding(
             padding: const EdgeInsets.all(2),
-            child: Container(
-              height: 20,
-              width: 20,
-              decoration: BoxDecoration(
-                color: _selectedIndicator == index ? Colors.amber : Colors.grey,
-                shape: BoxShape.circle,
-              ),
-            ),
+            child: _selectedIndicator == index
+                ? Container(
+                    height: 10,
+                    width: 5,
+                    decoration: const BoxDecoration(
+                      color: Colors.amber,
+                      shape: BoxShape.rectangle,
+                    ),
+                  )
+                : Container(
+                    height: 5,
+                    width: 20,
+                    decoration: const BoxDecoration(
+                      color: Colors.grey,
+                      shape: BoxShape.rectangle,
+                    ),
+                  ),
           ),
         );
       }).toList();

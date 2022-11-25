@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/search_result_page.dart';
 
 class InputTextFieldWidget extends StatefulWidget {
   final Widget label;
@@ -39,7 +40,12 @@ class _InputTextFieldWidgetState extends State<InputTextFieldWidget> {
   }
 
   void _submit() {
-    print('Submit form');
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ResultSearchPage(),
+      ),
+    );
   }
 
   @override

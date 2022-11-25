@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:todo_paraguay_sa/banner_promo.dart';
-import 'package:todo_paraguay_sa/cotacao_widget.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/banner_promo.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/cotacao_widget.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/manchetes.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/pesquisa.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/rodape_widget.dart';
 import 'package:todo_paraguay_sa/dummy.dart';
-import 'package:todo_paraguay_sa/manchetes.dart';
-import 'package:todo_paraguay_sa/pesquisa.dart';
-import 'package:todo_paraguay_sa/rodape_widget.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_paraguay_sa/campo_busca.dart';
+import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/campo_busca.dart';
 import 'package:todo_paraguay_sa/dummy.dart';
 import 'package:todo_paraguay_sa/functions.dart';
 
