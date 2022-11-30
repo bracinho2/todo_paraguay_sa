@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_paraguay_sa/app/module/search/domain/entities/search_result_entity.dart';
 import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/pesquisa.dart';
 import 'package:todo_paraguay_sa/app/module/search/presenter/pages/widgets/result_widget.dart';
 
@@ -145,16 +146,4 @@ class ResultSearchPage extends StatelessWidget {
       ),
     );
   }
-}
-
-class SearchResult {
-  final String title;
-  final String description;
-  final String link;
-
-  SearchResult(
-    this.title,
-    this.description,
-    this.link,
-  );
 }

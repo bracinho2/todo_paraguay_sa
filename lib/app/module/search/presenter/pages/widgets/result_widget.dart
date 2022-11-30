@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:todo_paraguay_sa/app/module/search/domain/entities/search_result_entity.dart';
 import 'package:todo_paraguay_sa/app/module/search/presenter/pages/search_item_details.dart';
-import 'package:todo_paraguay_sa/app/module/search/presenter/pages/search_result_page.dart';
 import 'package:todo_paraguay_sa/dummy.dart';
 import 'package:todo_paraguay_sa/functions.dart';
 
 class ResultWidget extends StatefulWidget {
   final SearchResult result;
-  ResultWidget({super.key, required this.result});
+  const ResultWidget({super.key, required this.result});
 
   @override
   State<ResultWidget> createState() => _ResultWidgetState();
