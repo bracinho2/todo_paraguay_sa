@@ -64,6 +64,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.10.1"
+  dotted_border:
+    dependency: "direct main"
+    description:
+      name: dotted_border
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0+3"
+  eva_icons_flutter:
+    dependency: "direct main"
+    description:
+      name: eva_icons_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.0"
   fake_async:
     dependency: transitive
     description:
@@ -83,11 +97,39 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  flutter_modular:
+    dependency: "direct main"
+    description:
+      name: flutter_modular
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.3"
+  flutter_modular_annotations:
+    dependency: transitive
+    description:
+      name: flutter_modular_annotations
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_triple:
+    dependency: "direct main"
+    description:
+      name: flutter_triple
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.7+4"
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.17.0"
   lints:
     dependency: transitive
     description:
@@ -123,6 +165,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  modular_core:
+    dependency: transitive
+    description:
+      name: modular_core
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.3+1"
+  modular_interfaces:
+    dependency: transitive
+    description:
+      name: modular_interfaces
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.2"
   path:
     dependency: transitive
     description:
@@ -130,6 +186,34 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.2"
+  path_drawing:
+    dependency: transitive
+    description:
+      name: path_drawing
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
+  path_parsing:
+    dependency: transitive
+    description:
+      name: path_parsing
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
+  percent_indicator:
+    dependency: "direct main"
+    description:
+      name: percent_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.4.0"
+  rx_notifier:
+    dependency: transitive
+    description:
+      name: rx_notifier
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -177,6 +261,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.12"
+  timeago:
+    dependency: "direct main"
+    description:
+      name: timeago
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.3.0"
+  triple:
+    dependency: transitive
+    description:
+      name: triple
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.5.0+1"
   typed_data:
     dependency: transitive
     description:
@@ -207,4 +305,4 @@ packages:
     version: "2.1.2"
 sdks:
   dart: ">=2.18.2 <3.0.0"
-  flutter: ">=1.17.0"
+  flutter: ">=1.24.0-7.0"

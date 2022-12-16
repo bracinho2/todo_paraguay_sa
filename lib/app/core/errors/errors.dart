@@ -7,9 +7,9 @@ abstract class Failure implements Exception {
     String? label,
   }) {
     if (stackTrace != null) {
-      print(label);
-      print(stackTrace);
+      //print(label);
+      //print(stackTrace);
     }
-    print('Passed in a main error');
+    //print('Passed in a main error');
   }
 }
