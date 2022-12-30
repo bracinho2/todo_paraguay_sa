@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/presenter/store/banner_promo_store.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/presenter/store/banner_promo_store.dart';
 
 class BannerPromoWidget extends StatefulWidget {
   final BannerPromoStore store;
@@ -61,7 +61,7 @@ class _BannerPromoWidgetState extends State<BannerPromoWidget> {
   Widget build(BuildContext context) {
     final mediaQueryData = MediaQuery.of(context);
     return SizedBox(
-      height: 200,
+      height: 400,
       width: mediaQueryData.size.width,
       child: ValueListenableBuilder(
         valueListenable: widget.store.banners,
@@ -110,7 +110,7 @@ class BannerView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200,
+      height: 400,
       child: PageView(
         controller: controller,
         children: itens,

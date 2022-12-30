@@ -42,7 +42,8 @@ class _ShowSearchWidgetState extends State<ShowSearchWidget> {
     return Expanded(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          horizontal: 150,
+          vertical: 15,
+          horizontal: 15,
         ),
         child: TextFormField(
           textInputAction: TextInputAction.go,
@@ -57,9 +58,14 @@ class _ShowSearchWidgetState extends State<ShowSearchWidget> {
           controller: widget.controller,
           validator: widget.validator,
           decoration: InputDecoration(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 20,
+            ),
             hintText: 'Buscar alguna cosa',
-            fillColor: Colors.white,
-            isDense: true,
+            hintStyle: const TextStyle(
+              color: Colors.grey,
+            ),
+            fillColor: Colors.black12,
             filled: true,
             suffixIcon: searchQuery != null && searchQuery!.isNotEmpty
                 ? IconButton(
@@ -75,26 +81,18 @@ class _ShowSearchWidgetState extends State<ShowSearchWidget> {
                 : null,
             prefixIcon: widget.prefixIcon != null
                 ? SizedBox(
-                    height: 64,
-                    width: 64,
+                    height: 50,
+                    width: 50,
                     child: Icon(
                       widget.prefixIcon,
                     ),
                   )
                 : null,
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(25),
-              borderSide: const BorderSide(
-                width: 2,
-                style: BorderStyle.solid,
-                color: Colors.blue,
-              ),
-            ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(25),
               borderSide: const BorderSide(
-                width: 2,
-                style: BorderStyle.solid,
+                width: 0,
+                style: BorderStyle.none,
               ),
             ),
           ),

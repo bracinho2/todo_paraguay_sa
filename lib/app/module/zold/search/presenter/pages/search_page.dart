@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:todo_paraguay_sa/app/core/dummy.dart';
 import 'package:todo_paraguay_sa/app/module/zold/app_main_page/presenter/widgets/search_widget.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/presenter/widgets/banner_promo_widget.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/presenter/widgets/banner_promo_widget.dart';
 import 'package:todo_paraguay_sa/app/module/zold/manchetes_widget/presenter/manchetes_widget.dart';
 import 'package:todo_paraguay_sa/app/module/zold/search/presenter/pages/widgets/cotacao_widget.dart';
 import 'package:todo_paraguay_sa/app/module/zold/search/presenter/pages/widgets/rodape_widget.dart';

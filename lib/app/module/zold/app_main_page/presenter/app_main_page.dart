@@ -8,7 +8,7 @@ import 'package:todo_paraguay_sa/app/module/zold/app_main_page/presenter/compone
 import 'package:todo_paraguay_sa/app/module/zold/app_main_page/presenter/page_states/app_main_page_state.dart';
 import 'package:todo_paraguay_sa/app/module/zold/app_main_page/presenter/pages/desktop_search_page.dart';
 import 'package:todo_paraguay_sa/app/module/zold/app_main_page/presenter/widgets/search_widget.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/presenter/widgets/banner_promo_widget.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/presenter/widgets/banner_promo_widget.dart';
 import 'package:todo_paraguay_sa/app/module/main_page/desktop_page/footer_widget.dart';
 import 'package:todo_paraguay_sa/app/module/zold/manchetes_widget/presenter/manchetes_widget.dart';
 import 'package:todo_paraguay_sa/app/module/zold/presenter/right_bar_widget.dart';

@@ -9,10 +9,14 @@ class AppMainPageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdaptativeBuilder(
       mobileBuilder: (context, constraints) {
-        return Container();
+        return Container(
+          color: Colors.black12,
+        );
       },
       tabletBuilder: (context, constraints) {
-        return Container();
+        return Container(
+          color: Colors.green,
+        );
       },
       desktopBuilder: (context, constraints) {
         return DeskTopMainPage(constraints: constraints);

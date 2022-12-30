@@ -11,8 +11,8 @@ class BannerLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 150,
-      width: 150,
+      height: 100,
+      width: 100,
       child: Image.asset(imagePath),
     );
   }

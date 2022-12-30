@@ -1,11 +1,11 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/domain/repository/get_all_banners_repository.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/domain/usecases/get_all_banners_usecase.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/external/get_all_banners_datasource_impl.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/infra/datasource/get_all_banners_datasource.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/infra/repository/get_all_banners_repository_impl.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/presenter/store/banner_promo_store.dart';
-import 'package:todo_paraguay_sa/app/module/zold/banner_promo_widget/presenter/widgets/banner_promo_widget.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/domain/repository/get_all_banners_repository.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/domain/usecases/get_all_banners_usecase.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/external/get_all_banners_datasource_impl.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/infra/datasource/get_all_banners_datasource.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/infra/repository/get_all_banners_repository_impl.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/presenter/store/banner_promo_store.dart';
+import 'package:todo_paraguay_sa/app/module/banner_promo_widget/presenter/widgets/banner_promo_widget.dart';
 
 class BannerPromoModule extends Module {
   @override
