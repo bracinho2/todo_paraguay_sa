@@ -1,6 +1,6 @@
 import 'package:banner_carousel/banner_carousel.dart';
 import 'package:flutter/material.dart';
-import 'package:todo_paraguay_sa/app/module/zold/search/domain/entities/search_result_entity.dart';
+import 'package:todo_paraguay_sa/app/modules/zold/search/domain/entities/search_result_entity.dart';
 
 final images = [
   'https://images.unsplash.com/photo-1517057970663-5d535acb0b3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
@@ -133,33 +133,36 @@ final resultMap = [
 
 final bannersResult = [
   {
+    'id': 01,
+    'name': 'roteador',
     'category': 'Categoria do Banner',
-    'description': 'Descricao do Banner',
-    'link':
-        'https://images.tcdn.com.br/img/img_prod/831220/roteador_gigabit_dual_band_ac1200_ac12g_mercusys_p_pc_gamer_47_4_20200803103117.jpg'
+    'message': 'hola que tal',
+    'url':
+        'https://cdn.awsli.com.br/1000x1000/1271/1271561/produto/178856547/0e42a5bdbe.jpg',
+    'published': '2020-01-02 03:04:05',
+    'expiresAt': '2020-01-02 03:04:05',
+    'exhibitionDays': 10
   },
   {
+    'id': 01,
+    'name': 'roteador',
     'category': 'Categoria do Banner',
-    'description': 'Descricao do Banner',
-    'link':
-        'https://images.tcdn.com.br/img/img_prod/831220/roteador_gigabit_dual_band_ac1200_ac12g_mercusys_p_pc_gamer_47_4_20200803103117.jpg'
+    'message': 'hola que tal',
+    'url':
+        'https://images.tcdn.com.br/img/img_prod/831220/roteador_gigabit_dual_band_ac1200_ac12g_mercusys_p_pc_gamer_47_4_20200803103117.jpg',
+    'published': '2020-01-02 03:04:05',
+    'expiresAt': '2020-01-02 03:04:05',
+    'exhibitionDays': 10
   },
   {
+    'id': 01,
+    'name': 'roteador',
     'category': 'Categoria do Banner',
-    'description': 'Descricao do Banner',
-    'link':
-        'https://images.tcdn.com.br/img/img_prod/831220/roteador_gigabit_dual_band_ac1200_ac12g_mercusys_p_pc_gamer_47_4_20200803103117.jpg'
-  },
-  {
-    'category': 'Categoria do Banner',
-    'description': 'Descricao do Banner',
-    'link':
-        'https://images.tcdn.com.br/img/img_prod/831220/roteador_gigabit_dual_band_ac1200_ac12g_mercusys_p_pc_gamer_47_4_20200803103117.jpg'
-  },
-  {
-    'category': 'Categoria do Banner',
-    'description': 'Descricao do Banner',
-    'link':
-        'https://images.tcdn.com.br/img/img_prod/831220/roteador_gigabit_dual_band_ac1200_ac12g_mercusys_p_pc_gamer_47_4_20200803103117.jpg'
+    'message': 'hola que tal',
+    'url':
+        'https://cdn.awsli.com.br/1000x1000/1271/1271561/produto/178856547/0e42a5bdbe.jpg',
+    'published': '2020-01-02 03:04:05',
+    'expiresAt': '2020-01-02 03:04:05',
+    'exhibitionDays': 10
   }
 ];
