@@ -1,6 +1,5 @@
 import 'package:banner_carousel/banner_carousel.dart';
 import 'package:flutter/material.dart';
-import 'package:todo_paraguay_sa/app/modules/zold/search/domain/entities/search_result_entity.dart';
 
 final images = [
   'https://images.unsplash.com/photo-1517057970663-5d535acb0b3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
@@ -12,6 +11,9 @@ final images = [
   'https://images.unsplash.com/photo-1620736663824-18f7d3a79d54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80',
   'https://images.unsplash.com/photo-1540558159980-df5705e37f6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
   'https://www.expatexchange.com/images/asuncion_paraguay_ctry_tw.jpg',
+  'https://media.ultimahora.com/p/f5f0f14b17c70b20aed06441e1108bf9/adjuntos/161/imagenes/009/211/0009211154/marianela-areguajpg.jpg',
+  'https://media.ultimahora.com/p/f5f0f14b17c70b20aed06441e1108bf9/adjuntos/161/imagenes/009/211/0009211154/marianela-areguajpg.jpg',
+  'https://media.ultimahora.com/p/f5f0f14b17c70b20aed06441e1108bf9/adjuntos/161/imagenes/009/211/0009211154/marianela-areguajpg.jpg',
   'https://media.ultimahora.com/p/f5f0f14b17c70b20aed06441e1108bf9/adjuntos/161/imagenes/009/211/0009211154/marianela-areguajpg.jpg',
 ];
 
@@ -95,6 +97,18 @@ final List<Widget> imagesBanner = [
     ),
   ),
 ];
+
+class SearchResult {
+  final String title;
+  final String description;
+  final String link;
+
+  SearchResult({
+    required this.title,
+    required this.description,
+    required this.link,
+  });
+}
 
 final List<SearchResult> results = [
   SearchResult(

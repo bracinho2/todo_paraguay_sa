@@ -1,8 +1,11 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_paraguay_sa/app/core/dummy.dart';
 
 class CategoriesListWidget extends StatelessWidget {
-  const CategoriesListWidget({super.key});
+  CategoriesListWidget({super.key});
+
+  final scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -11,37 +14,44 @@ class CategoriesListWidget extends StatelessWidget {
         horizontal: 50,
       ),
       child: SizedBox(
-        height: 200,
-        child: ListView.builder(
-          itemCount: images.length,
-          shrinkWrap: true,
-          scrollDirection: Axis.horizontal,
-          clipBehavior: Clip.none,
-          itemBuilder: (context, index) {
-            final image = images[index];
-            return Padding(
-              padding: const EdgeInsets.all(10),
-              child: Container(
-                height: 200,
-                width: 150,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage(
-                      image,
+          height: 200,
+          child: ScrollConfiguration(
+            behavior: ScrollConfiguration.of(context).copyWith(dragDevices: {
+              PointerDeviceKind.mouse,
+            }),
+            child: ListView.builder(
+              dragStartBehavior: DragStartBehavior.start,
+              controller: scrollController,
+              itemCount: images.length,
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              clipBehavior: Clip.none,
+              itemBuilder: (context, index) {
+                final image = images[index];
+
+                return Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Container(
+                    height: 200,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                          image,
+                        ),
+                      ),
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(
+                          20,
+                        ),
+                      ),
                     ),
                   ),
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      20,
-                    ),
-                  ),
-                ),
-              ),
-            );
-          },
-        ),
-      ),
+                );
+              },
+            ),
+          )),
     );
   }
 }

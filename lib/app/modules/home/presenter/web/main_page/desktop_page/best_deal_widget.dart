@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:todo_paraguay_sa/app/core/dummy.dart';
 
 class BestDealWidget extends StatelessWidget {
-  const BestDealWidget({super.key});
+  BestDealWidget({super.key});
+  final scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,7 @@ class BestDealWidget extends StatelessWidget {
       child: SizedBox(
         height: 300,
         child: ListView.builder(
+          primary: true,
           scrollDirection: Axis.horizontal,
           itemCount: 10,
           itemBuilder: (context, index) {

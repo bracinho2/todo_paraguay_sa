@@ -39,7 +39,7 @@ class DeskTopMainPage extends StatelessWidget {
                 BannerPromoWidget(store: Modular.get<BannerPromoStore>()),
                 const SizedBox(height: 50),
                 const TitleSessionWidget(title: 'Shop Our Top Categories'),
-                const CategoriesListWidget(),
+                CategoriesListWidget(),
                 const SizedBox(height: 50),
                 const TitleSessionWidget(title: 'Today the best deal for You'),
                 const SpecialProductsListWidget(),
@@ -47,7 +47,7 @@ class DeskTopMainPage extends StatelessWidget {
                 const OurBrandWidget(),
                 const SizedBox(height: 50),
                 const TitleSessionWidget(title: 'Today the best deal for You'),
-                const BestDealWidget(),
+                BestDealWidget(),
                 const SingleStoreAnnoucementWidget(),
                 const ImportantInfoWidget(),
                 const Padding(
