@@ -1,19 +1,20 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class BannerLogo extends StatelessWidget {
   const BannerLogo({
     Key? key,
-    required this.imagePath,
+    required this.bannerSize,
   }) : super(key: key);
 
-  final String imagePath;
+  final double bannerSize;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100,
-      width: 100,
-      child: Image.asset(imagePath),
+      height: bannerSize,
+      width: bannerSize,
+      child: Image.asset('assets/todo_paraguay.png'),
     );
   }
 }

@@ -1,6 +1,8 @@
+import 'package:cambona/cambona.dart';
+import 'package:cambona/themes/cambona_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:todo_paraguay_sa/app/core/theme/app_theme.dart';
+import 'package:todo_paraguay_sa/app/core/images.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -14,9 +16,9 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(seconds: 3)).then((value) {
+    Future.delayed(const Duration(seconds: 1)).then((value) {
       Modular.to.navigate(
-        '/mainpage/',
+        '/admin/',
       );
     });
   }
@@ -29,26 +31,25 @@ class _SplashPageState extends State<SplashPage> {
           children: [
             Expanded(
               child: Container(
-                color: primaryColor,
+                color: CambonaColors.brandRed,
               ),
             ),
             Expanded(
               child: Container(
-                color: secundaryColor,
+                color: CambonaColors.brandWhite,
               ),
             ),
             Expanded(
               child: Container(
-                color: thirdColor,
+                color: CambonaColors.brandBlue,
               ),
             ),
           ],
         ),
-        Center(
-          child: SizedBox(
-            height: 150,
-            width: 250,
-            child: Image.asset('assets/todo_paraguay.png'),
+        const Center(
+          child: LogoWidget(
+            logoSize: 250,
+            logoPath: logoPath,
           ),
         ),
       ],

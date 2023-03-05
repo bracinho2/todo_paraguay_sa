@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:todo_paraguay_sa/app/modules/home/presenter/web/main_page/desktop_page/banner_logo_widget.dart';
 import 'package:todo_paraguay_sa/app/modules/home/presenter/web/main_page/desktop_page/show_search_widget.dart';
 
@@ -16,7 +17,9 @@ class MainMenuWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const BannerLogo(imagePath: 'assets/todo_paraguay.png'),
+          const BannerLogo(
+            bannerSize: 100,
+          ),
           const Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 20,
@@ -67,21 +70,24 @@ class MainMenuWidget extends StatelessWidget {
             obscure: false,
             submit: () {},
           ),
-          Row(
-            children: const [
-              Text(
-                'Account',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+          GestureDetector(
+            onTap: () => Modular.to.navigate('/client_dashboard/'),
+            child: Row(
+              children: const [
+                Text(
+                  'Account',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              SizedBox(
-                width: 5,
-              ),
-              Icon(
-                Icons.account_circle,
-              ),
-            ],
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.account_circle,
+                ),
+              ],
+            ),
           ),
           const SizedBox(
             width: 10,

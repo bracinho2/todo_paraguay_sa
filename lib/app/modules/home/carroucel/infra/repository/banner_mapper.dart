@@ -3,7 +3,7 @@ import '../../domain/entities/carroucel_entity.dart';
 class CarroucelMapper {
   static CarroucelEntity fromMap(Map<String, dynamic> map) {
     return CarroucelEntity(
-      id: map['id'],
+      id: int.parse(map['id']),
       name: map['name'],
       category: map['category'],
       message: map['message'],

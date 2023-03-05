@@ -147,7 +147,7 @@ final resultMap = [
 
 final bannersResult = [
   {
-    'id': 01,
+    'id': '01',
     'name': 'roteador',
     'category': 'Categoria do Banner',
     'message': 'hola que tal',
@@ -158,7 +158,7 @@ final bannersResult = [
     'exhibitionDays': 10
   },
   {
-    'id': 01,
+    'id': '02',
     'name': 'roteador',
     'category': 'Categoria do Banner',
     'message': 'hola que tal',
@@ -169,7 +169,7 @@ final bannersResult = [
     'exhibitionDays': 10
   },
   {
-    'id': 01,
+    'id': '03',
     'name': 'roteador',
     'category': 'Categoria do Banner',
     'message': 'hola que tal',
@@ -179,4 +179,16 @@ final bannersResult = [
     'expiresAt': '2020-01-02 03:04:05',
     'exhibitionDays': 10
   }
+];
+
+final dashboardBanner = [
+  {
+    'id': '01',
+    'bannerName': 'roteador',
+    'bannerUrl':
+        'https://cdn.awsli.com.br/1000x1000/1271/1271561/produto/178856547/0e42a5bdbe.jpg',
+    'published': '2020-01-02 03:04:05',
+    'exhibitionDays': 10,
+    'aproved': true
+  },
 ];

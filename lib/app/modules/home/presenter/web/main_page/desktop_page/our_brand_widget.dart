@@ -47,7 +47,7 @@ class OurBrandWidget extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Suas estatisticas do evento',
+                          'Suas estatisticas',
                           style: TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.bold,

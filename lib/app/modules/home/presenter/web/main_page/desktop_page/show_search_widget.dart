@@ -48,7 +48,6 @@ class _ShowSearchWidgetState extends State<ShowSearchWidget> {
         child: TextFormField(
           textInputAction: TextInputAction.go,
           onFieldSubmitted: (value) {
-            print(searchQuery);
             searchQuery = '';
             widget.controller.clear();
           },
@@ -71,7 +70,6 @@ class _ShowSearchWidgetState extends State<ShowSearchWidget> {
                 ? IconButton(
                     onPressed: () {
                       setState(() {
-                        print(searchQuery);
                         searchQuery = '';
                         widget.controller.clear();
                       });
